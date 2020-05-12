@@ -1,0 +1,25 @@
+header {
+  background: url("../images/background-image.jpg") center / cover;
+  height: 30vh;
+}
+
+form {
+  margin: auto;
+  display: block;
+  width: 400px;
+}
+
+header h1 {
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin: auto;
+  display: block;
+  width: 400px;
+}
