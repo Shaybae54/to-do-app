@@ -3,7 +3,7 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDolist = document.getElementById('toDoList');
 
-  addToDoForm.addEventListener('submit', () =>; {
+  addToDoForm.addEventListener('submit', () => {
     event.preventDefault();
 
     //get the text
@@ -19,19 +19,19 @@ function onReady() {
     checkbox.type = "checkbox";
 
     //add delete button
-    let deleButton = document.createElement('button');
-    deleteButton.textContent = "Delete"
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = "Delete";
 
-    deletButton.addEventListener('click', function(event) {
-      toDolist.removeChild(this.parentElement);
-    })
+    deleteButton.addEventListener('click', function(event) {
+      toDoList.removeChild(this.parentElement);
+    });
 
     //set the title
     newLi.textContent = title;
 
     //attach the checkbox to the li
     newLi.appendChild(checkbox);
-    newLi.appendChild(deletButton);
+    newLi.appendChild(deleteButton);
 
     //attach the li to the ul
     toDoList.appendChild(newLi);
@@ -43,6 +43,5 @@ function onReady() {
 }
 
 window.onload = function() {
-  alert("The window is loaded!");
   onReady();
 };
