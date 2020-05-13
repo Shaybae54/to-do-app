@@ -3,7 +3,7 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDolist = document.getElementById('toDoList');
 
-  addToDoForm.addEventListener('submit', () =>; {
+  addToDoForm.addEventListener('submit', () => {
     event.preventDefault();
 
     //get the text
@@ -19,10 +19,10 @@ function onReady() {
     checkbox.type = "checkbox";
 
     //add delete button
-    let deleButton = document.createElement('button');
+    let deleteButton = document.createElement('button');
     deleteButton.textContent = "Delete"
 
-    deletButton.addEventListener('click', function(event) {
+    deleteButton.addEventListener('click', function(event) {
       toDolist.removeChild(this.parentElement);
     })
 
