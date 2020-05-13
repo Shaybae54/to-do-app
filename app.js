@@ -41,8 +41,3 @@ function onReady() {
 
   });
 }
-
-window.onload = function() {
-  alert("The window is loaded!");
-  onReady();
-};
