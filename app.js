@@ -29,9 +29,9 @@ function onReady() {
       newLi.textContent = toDo.title;
 
 
-      toDoList.appendchild(newLi);
-      newLi.appendchild(checkbox);
-      newLi.appendchild(deletebtn);
+      toDoList.appendChild(newLi);
+      newLi.appendChild(checkbox);
+      newLi.appendChild(deletebtn);
     })
   }
 
